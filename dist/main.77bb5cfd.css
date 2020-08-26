@@ -1,0 +1,890 @@
+@import url("https://fonts.googleapis.com/css2?family=Lemonada:wght@700&display=swap");
+header {
+  height: 95vh;
+  background: linear-gradient(to right bottom, #0bb8a6d3, #11dfcae7), url(/hero.7a1046c0.jpg) no-repeat top center;
+  background-size: cover;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0% 100%);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media (max-width: 578px) {
+  header {
+    clip-path: polygon(0 0, 100% 0, 100% 87vh, 0% 100%);
+  }
+}
+header .logo {
+  position: absolute;
+  top: 4rem;
+  left: 4rem;
+}
+header .logo img {
+  width: 10rem;
+  transition: 0.2s;
+}
+header .logo :hover {
+  transform: rotate(-10deg);
+}
+header .title {
+  color: white;
+  text-transform: uppercase;
+  margin-top: -10rem;
+}
+header .title h1 {
+  font: bold 8vw sans-serif;
+  letter-spacing: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+header .title p {
+  text-align: center;
+  font-size: calc(0.7rem + 2.6vw);
+  font-family: monospace;
+  letter-spacing: 0.5rem;
+  margin-bottom: 5rem;
+}
+header a {
+  all: unset;
+  background-color: #fff;
+  box-shadow: 0.4rem 0.4rem #fff;
+  color: #777777;
+  padding: 1.5rem 3rem;
+  cursor: pointer;
+  font: bold 1.5rem "lemonada", cursive;
+  text-transform: capitalize;
+  transition: 0.1s;
+  position: relative;
+}
+header a:hover {
+  background-color: #00ffdd;
+  color: #000;
+  box-shadow: -4px -4px #fff;
+}
+header a:active {
+  top: 0.5rem;
+}
+
+.about {
+  background-color: #f7f7f7;
+  padding: 25rem 0;
+  margin-top: -20vh;
+}
+.about .title {
+  text-align: center;
+  margin-bottom: 8rem;
+}
+.about .title h2 {
+  font: 700 3.5rem "Lemonada", cursive;
+  text-align: center;
+  text-transform: uppercase;
+  display: inline-block;
+  background-image: linear-gradient(to right, #90f7edd3, #32ccbde7);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: 0.2s;
+}
+.about .title h2:hover {
+  transform: skew(5deg, 5deg) scale(1.1);
+  text-shadow: 2px 2px 1px #32ccbde7;
+}
+.about .info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 0 20px;
+}
+@media (max-width: 992px) {
+  .about .info {
+    grid-template-columns: 1fr;
+  }
+}
+.about .info .text h1 {
+  font: 700 1.7rem "Lemonada", cursive;
+  letter-spacing: 0.2px;
+  margin-bottom: 15px;
+}
+.about .info .text p {
+  font: normal 1.2rem/25px "Lemonada", cursive;
+  letter-spacing: 0.2px;
+  width: 465px;
+  margin-bottom: 20px;
+}
+.about .info .text a {
+  all: unset;
+  font: 700 1.7rem "Lemonada", cursive;
+  color: #32ccbde7;
+  border-bottom: 3px solid #90f7edd3;
+  cursor: pointer;
+  padding: 10px;
+  display: inline-block;
+  transition: 0.1s;
+}
+.about .info .text a:hover {
+  background-color: #90f7edd3;
+  box-shadow: 0 1rem 2rem #0000001e;
+  transform: translateY(0px);
+  transform: scale(1.1);
+}
+.about .info .text a:active {
+  box-shadow: 0 0.5rem 1rem #0000001e;
+  transform: translateY(0);
+}
+.about .info .composition {
+  position: relative;
+  margin: 7.5rem 5rem 37rem 0;
+}
+.about .info .composition img {
+  width: 55%;
+  box-shadow: 0 1.5rem 4rem #00000041;
+  border-radius: 2rem;
+  position: absolute;
+  transition: all 0.2s;
+  outline-offset: 1rem;
+}
+.about .info .composition img:hover {
+  outline: 1.5rem solid #90f7edd3;
+  box-shadow: 0 2.5rem 4rem #00000073;
+  transform: scale(1.05) rotate(-3deg);
+  z-index: 10;
+}
+.about .info .composition:hover img:not(:hover) {
+  transform: scale(0.9);
+}
+.about .info .composition .img1 {
+  left: 0;
+  top: -2rem;
+}
+.about .info .composition .img2 {
+  right: 0;
+  top: 2rem;
+}
+.about .info .composition .img3 {
+  left: 20%;
+  top: 10rem;
+}
+
+.features {
+  padding: 20rem 5rem;
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+  clip-path: polygon(0 21%, 100% 1%, 100% 83%, 0% 95%);
+  margin-top: -30vh;
+}
+@media (min-width: 350px) {
+  .features {
+    clip-path: polygon(0 8%, 100% 1%, 100% 94%, 0% 95%);
+  }
+}
+.features .grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 3rem;
+}
+@media (min-width: 350px) {
+  .features .grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 768px) {
+  .features .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 992px) {
+  .features .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.features .grid .feature-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.2s;
+  padding: 1rem;
+  background-color: #ffffff71;
+  height: 400px;
+  border-radius: 35px;
+}
+@media (min-width: 350px) {
+  .features .grid .feature-box {
+    margin-bottom: 2rem;
+  }
+}
+.features .grid .feature-box:hover {
+  transform: scale(1.1) rotate(-5deg);
+  cursor: pointer;
+}
+.features .grid .feature-box i {
+  font-size: 8rem;
+  background-image: linear-gradient(to right, orange, gold);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.features .grid .feature-box h3 {
+  font: bold 1.5rem "Lemonada", cursive;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+.features .grid .feature-box p {
+  font: normal 1.2rem/25px "Lemonada", cursive;
+  letter-spacing: 0.2px;
+  text-align: center;
+}
+
+.tours {
+  background-color: #f7f7f7;
+  padding: 25rem 5rem 10rem 5rem;
+  margin-top: -30vh;
+}
+.tours .title {
+  text-align: center;
+  margin-bottom: 8rem;
+}
+.tours .title h2 {
+  font: 700 3.5rem "Lemonada", cursive;
+  text-align: center;
+  text-transform: uppercase;
+  display: inline-block;
+  background-image: linear-gradient(to right, #32ccbde7, #90f7edd3);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: 0.2s;
+}
+.tours .title h2:hover {
+  transform: skew(5deg, 5deg) scale(1.1);
+  text-shadow: 2px 2px 1px #32ccbde7;
+}
+.tours .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+@media (min-width: 350px) {
+  .tours .grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 768px) {
+  .tours .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 992px) {
+  .tours .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.tours .grid .card-box {
+  perspective: 150rem;
+  position: relative;
+  height: 50rem;
+}
+.tours .grid .card-box .side {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50rem;
+  transition: 0.5s;
+  backface-visibility: hidden;
+  border-radius: 2px;
+  overflow: hidden;
+}
+.tours .grid .card-box .front {
+  background-color: #f7f7f7;
+  box-shadow: 2px 2px 15px #00000046;
+}
+.tours .grid .card-box .front .picture {
+  background-size: cover;
+  height: 23rem;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+}
+.tours .grid .card-box .front .pic1 {
+  background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(/nat-5.04adc0d0.jpg);
+  background-blend-mode: screen;
+}
+.tours .grid .card-box .front .pic2 {
+  background-image: linear-gradient(to right bottom, #32ccbde7, #90f7edd3), url(/nat-6.402987e3.jpg);
+  background-blend-mode: screen;
+}
+.tours .grid .card-box .front .pic3 {
+  background-image: linear-gradient(to right bottom, #0093e9, #80d0c7), url(/nat-7.40b500ee.jpg);
+  background-blend-mode: screen;
+}
+.tours .grid .card-box .front h4 {
+  font: 300 2.5rem "Lemonada", cursive;
+  text-transform: uppercase;
+  color: #ffff;
+  position: absolute;
+  top: 12rem;
+  right: 2rem;
+  text-align: right;
+  width: 75%;
+}
+.tours .grid .card-box .front h4 span {
+  padding: 1rem 1.5rem;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+.tours .grid .card-box .front h4 .span1 {
+  background-image: linear-gradient(to right bottom, #ffb900, #ff7730);
+}
+.tours .grid .card-box .front h4 .span2 {
+  background-image: linear-gradient(to right bottom, #32ccbde7, #90f7edd3);
+}
+.tours .grid .card-box .front h4 .span3 {
+  background-image: linear-gradient(to right bottom, #0093e9, #80d0c7);
+}
+.tours .grid .card-box .front ul {
+  width: 80%;
+  margin: 2.5rem auto 0 auto;
+}
+.tours .grid .card-box .front ul li {
+  list-style-type: none;
+  text-align: center;
+  font: 1.5rem "Lemonada", cursive;
+  letter-spacing: 0.2px;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #ddd;
+}
+.tours .grid .card-box .back {
+  transform: rotateY(180deg);
+  background-image: linear-gradient(to right bottom, #ffb900, #ff7730);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.tours .grid .card-box .back span {
+  font: 1.8rem "Lemonada", cursive;
+  color: white;
+  margin: 3rem 0;
+}
+.tours .grid .card-box .back h2 {
+  font: 4.5rem "Lemonada", cursive;
+  color: white;
+}
+.tours .grid .card-box .back a {
+  all: unset;
+  font: 2rem "Lemonada", cursive;
+  border-radius: 50px;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  background-color: #fff;
+  color: #000;
+  position: absolute;
+  bottom: 7rem;
+}
+.tours .grid .card-box:hover .front {
+  transform: rotateY(-180deg);
+}
+.tours .grid .card-box:hover .back {
+  transform: rotateY(0);
+}
+
+.stories {
+  padding: 15rem 0;
+  position: relative;
+  overflow: hidden;
+}
+.stories .bg-vid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  opacity: 0.2;
+}
+.stories .title {
+  text-align: center;
+  margin-bottom: 8rem;
+}
+.stories .title h2 {
+  font: 700 3.5rem "Lemonada", cursive;
+  text-align: center;
+  text-transform: uppercase;
+  display: inline-block;
+  background-image: linear-gradient(to right, #32ccbde7, #90f7edd3);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: 0.2s;
+}
+.stories .title h2:hover {
+  transform: skew(5deg, 5deg) scale(1.1);
+  text-shadow: 2px 2px 1px #32ccbde7;
+}
+.stories .story {
+  width: 80%;
+  padding: 7rem 8rem;
+  margin: 0 auto;
+  border-radius: 2px;
+  box-shadow: 2px 2px 20px #00000011;
+  background-color: #f7f7f7da;
+  clip-path: polygon(8% 0, 100% 0%, 92% 100%, 0% 100%);
+  margin-bottom: 5rem;
+  font: 700 1rem "Lemonada", cursive;
+  text-transform: uppercase;
+}
+.stories .story .shape {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  float: left;
+  shape-outside: circle(47% at 41% 47%);
+  clip-path: circle(52% at 58% 56%);
+  transform: translate(-3rem, -1.5rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.stories .story .shape1 {
+  background-image: url("/nat-8.4c458b43.jpg");
+  background-size: cover;
+}
+.stories .story .shape2 {
+  background-image: url("/nat-9.414a7047.jpg");
+  background-size: cover;
+}
+
+.booking {
+  padding: 15rem 5rem;
+  background-image: linear-gradient(to right, #32ccbde7, #90f7edd3);
+}
+.booking .book {
+  background-image: url(/nat-10.e9f5538e.jpg);
+  background-size: cover;
+  height: 57rem;
+}
+.booking .book form {
+  background-color: #f7f7ffee;
+  height: 100%;
+  width: 55%;
+  clip-path: polygon(0 0, 100% 0, 86% 100%, 0 100%);
+  padding: 2rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+@media (max-width: 992px) {
+  .booking .book form {
+    width: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+.booking .book form .title {
+  text-align: center;
+  margin-bottom: 8rem;
+}
+.booking .book form .title h2 {
+  font: 700 3rem "Lemonada", cursive;
+  text-align: center;
+  text-transform: uppercase;
+  display: inline-block;
+  background-image: linear-gradient(to right, #32ccbde7, #90f7edd3);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: 0.2s;
+}
+.booking .book form .title h2:hover {
+  transform: skew(5deg, 5deg) scale(1.1);
+  text-shadow: 2px 2px 1px #32ccbde7;
+}
+.booking .book form .title + input {
+  margin-top: -6rem;
+}
+.booking .book form input[type=name],
+.booking .book form input[type=email] {
+  transition: 0.1s;
+  all: unset;
+  font: 700 1.2rem "Lemonada", cursive;
+  letter-spacing: 0.6px;
+  padding: 1.5rem 2rem;
+  border-radius: 2px;
+  background-color: #fffffffd;
+  border-bottom: 2px solid #000;
+  transition: 0.1s;
+  width: 60%;
+  margin-bottom: 0.5rem;
+  color: black;
+}
+.booking .book form input[type=name]:focus,
+.booking .book form input[type=email]:focus {
+  border-bottom: 2px solid orange;
+  box-shadow: 3px 3px 15px #0000003b;
+}
+.booking .book form input[type=name]:valid,
+.booking .book form input[type=email]:valid {
+  border-bottom: 2px solid #32ccbde7;
+}
+.booking .book form input[type=name]::placeholder,
+.booking .book form input[type=email]::placeholder {
+  color: #bbb;
+}
+.booking .book form input[type=name]::placeholder:focus,
+.booking .book form input[type=email]::placeholder:focus {
+  opacity: 0;
+}
+.booking .book form label[for=name],
+.booking .book form label[for=email] {
+  margin-bottom: 3rem;
+  font: 700 1.2rem "Lemonada", cursive;
+  align-self: flex-start;
+  transform: translate(-1rem, -4rem);
+}
+.booking .book form input:placeholder-shown + label {
+  opacity: 0;
+  visibility: hidden;
+}
+.booking .book form .check {
+  display: grid;
+  grid-gap: 4rem;
+  grid-template-columns: 1fr 1fr;
+}
+@media (max-width: 992px) {
+  .booking .book form .check {
+    grid-gap: 3rem;
+    grid-template-columns: 1fr;
+  }
+}
+.booking .book form .check .check-box input {
+  margin-right: 1rem;
+  cursor: pointer;
+  opacity: 0;
+}
+.booking .book form .check .check-box input:checked ~ label span::before {
+  opacity: 1;
+}
+.booking .book form .check .check-box label {
+  font: 700 1.1rem "Lemonada", cursive;
+  cursor: pointer;
+  position: relative;
+}
+.booking .book form .check .check-box span {
+  position: absolute;
+  top: -9px;
+  left: -34px;
+  height: 3.5rem;
+  width: 3.5rem;
+  border: 6px solid #90f7edd3;
+  border-radius: 50%;
+  margin-left: -1rem;
+}
+.booking .book form .check .check-box span::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 50%;
+  background-color: #32ccbde7;
+  opacity: 0;
+}
+.booking .book form a {
+  all: unset;
+  font: 700 1.3rem "Lemonada", cursive;
+  color: #32ccbde7;
+  border-bottom: 3px solid #90f7edd3;
+  cursor: pointer;
+  padding: 10px;
+  display: inline-block;
+  transition: 0.1s;
+  transform: translateY(2.5rem);
+}
+.booking .book form a:hover {
+  background-color: #90f7edd3;
+  box-shadow: 0 1rem 2rem #0000001e;
+}
+.booking .book form a:active {
+  box-shadow: 0 0.5rem 1rem #0000001e;
+}
+
+footer {
+  padding: 30rem 1.5rem 6rem 1.5rem;
+  background-color: #212121;
+  position: relative;
+  display: grid;
+  grid-gap: 10rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+@media (max-width: 992px) {
+  footer {
+    grid-gap: 5rem;
+    grid-template-columns: 1fr;
+  }
+}
+footer nav {
+  border-top: 1px solid #bbb;
+  padding-top: 2rem;
+}
+footer nav li {
+  all: unset;
+  margin: 1rem;
+}
+footer nav li a {
+  all: unset;
+  font: 1.1rem "Lemonada", cursive;
+  letter-spacing: 0.3px;
+  color: #f7f7f7;
+  cursor: pointer;
+  transition: 0.2s;
+  text-transform: uppercase;
+  display: inline-block;
+}
+footer nav li a:hover {
+  color: #32ccbde7;
+  transform: rotate(4deg) scale(1.1);
+  text-shadow: 1.5px 1.5px 5px #32ccbde7;
+}
+footer img {
+  position: absolute;
+  top: 5rem;
+  left: 42%;
+}
+footer .copyright {
+  border-top: 1px solid #bbb;
+  padding-top: 2rem;
+  color: #f7f7f7;
+  font: 1.3em "Lemonada", cursive;
+  letter-spacing: 0.3px;
+}
+
+.navigation input {
+  display: none;
+}
+.navigation input:checked ~ nav {
+  display: block;
+}
+.navigation label {
+  height: 7rem;
+  width: 7rem;
+  position: fixed;
+  top: 6rem;
+  right: 6rem;
+  z-index: 2000;
+  cursor: pointer;
+}
+.navigation .bg {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  position: fixed;
+  top: 5rem;
+  right: 5rem;
+  background-color: #fff;
+  border: 2px solid #000;
+  z-index: 1000;
+}
+.navigation .bg img {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+}
+@media (max-width: 576px) {
+  .navigation .bg {
+    top: 4rem;
+    right: 3rem;
+  }
+}
+.navigation nav {
+  background-image: linear-gradient(to right bottom, #14e68e, #40a399);
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.navigation nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10rem;
+}
+.navigation nav ul li {
+  all: unset;
+  margin: 2rem;
+}
+.navigation nav ul li a {
+  all: unset;
+  cursor: pointer;
+  font: 2.5em "lemonada", cursive;
+  color: #fff;
+  padding: 1rem 2rem;
+  background-size: 220%;
+  background-image: linear-gradient(113deg, transparent 0%, transparent 50%, #fff 50%);
+  transition: 0.2s;
+  display: inline-block;
+}
+.navigation nav ul li a:hover {
+  background-position: 100%;
+  color: #111;
+  transform: translateX(1rem);
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  backdrop-filter: blur(10px);
+  background-color: #2121216e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.1s;
+}
+.popup:target {
+  opacity: 1;
+  visibility: visible;
+}
+.popup .popup-content {
+  background-color: #fff;
+  height: 60%;
+  width: 90%;
+  border-radius: 5px;
+  position: relative;
+  display: flex;
+}
+.popup .popup-content .close-btn {
+  position: absolute;
+  right: 19px;
+  top: 8px;
+  font-size: 7rem;
+  text-decoration: none;
+  color: #222;
+}
+.popup .popup-content .img-box img {
+  width: 100%;
+  height: 50%;
+  display: block;
+}
+.popup .popup-content .details {
+  padding: 3rem;
+  align-self: center;
+}
+.popup .popup-content .details h2 {
+  font: 700 3.5rem "Lemonada", cursive;
+  text-align: center;
+  text-transform: uppercase;
+  display: inline-block;
+  background-image: linear-gradient(to right, #90f7edd3, #32ccbde7);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: 0.2s;
+  margin-bottom: 1rem;
+}
+.popup .popup-content .details h2:hover {
+  transform: skew(5deg, 5deg) scale(1.1);
+  text-shadow: 2px 2px 1px #32ccbde7;
+}
+.popup .popup-content .details h3 {
+  text-transform: uppercase;
+  font: 1.5rem "lemonada", cursive;
+  letter-spacing: 0.4px;
+  margin-bottom: 1rem;
+}
+.popup .popup-content .details .paragraph {
+  display: flex;
+}
+.popup .popup-content .details .paragraph p {
+  font: 1rem/2rem "lemonada", cursive;
+  letter-spacing: 0.2px;
+  display: inline-block;
+}
+.popup .popup-content .details .paragraph :nth-child(1) {
+  margin-right: 2rem;
+  border-right: 1.5px solid #eee;
+  padding-right: 1rem;
+}
+.popup .popup-content .details a {
+  all: unset;
+  font: 700 1.3rem "Lemonada", cursive;
+  color: #32ccbde7;
+  border-bottom: 3px solid #90f7edd3;
+  cursor: pointer;
+  padding: 10px;
+  display: inline-block;
+  transition: 0.1s;
+  transform: translateY(2.5rem);
+}
+.popup .popup-content .details a:hover {
+  background-color: #90f7edd3;
+  box-shadow: 0 1rem 2rem #0000001e;
+}
+.popup .popup-content .details a:active {
+  box-shadow: 0 0.5rem 1rem #0000001e;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  box-sizing: border-box;
+  color: #777777;
+  overflow-x: hidden;
+}
+
+.container {
+  padding: 0 1rem;
+}
+@media (max-width: 576px) {
+  .container {
+    padding: 0;
+  }
+}
+
+::selection {
+  background-color: #222;
+  color: #eee;
+}
+
+:root {
+  scrollbar-color: #666 #222 !important;
+  scrollbar-width: thin !important;
+}
+
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #222;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #666;
+  border-radius: 5rem;
+}
+
+/*# sourceMappingURL=/main.77bb5cfd.css.map */
